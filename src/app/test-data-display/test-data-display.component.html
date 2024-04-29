@@ -1,0 +1,35 @@
+<div class = "container">
+<h2>Table of example</h2>
+<p>example</p>
+
+<table class ="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Indentification Number</th>
+      <th>Address</th>
+      <th>Phone Number</th>
+      <th>Online Consultations</th>
+      <th>Working Hours</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let test of tests">
+      <td>{{ test.id }}</td>
+      <td>{{ test.name }}</td>
+      <td>{{ test.surname }}</td>
+      <td>{{ test.indification_number }}</td>
+      <td>{{ test.address }}</td>
+      <td>{{ test.phone_number }}</td>
+      <td>{{ test.online_Consultations }}</td>
+      <td>{{ test.working_hours }}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>>
+
+
