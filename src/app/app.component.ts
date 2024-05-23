@@ -1,12 +1,14 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {TestDataDisplayComponent} from "./test-data-display/test-data-display.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {LoginMenuComponent} from "./loginMenu/loginMenu.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,TestDataDisplayComponent,HttpClientModule],
+  imports: [RouterOutlet, TestDataDisplayComponent, HttpClientModule, LoginMenuComponent, FormsModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

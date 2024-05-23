@@ -5,10 +5,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientModule} from "@angular/common/http";
 import {AppComponent} from "./app.component";
 import {TestdatadisplayService} from "./testdatadisplay.service";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [],
-  imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule, AppComponent, TestDataDisplayComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule, AppComponent, TestDataDisplayComponent,FormsModule],
   providers : [HttpClientModule,TestdatadisplayService,AppComponent],
   bootstrap: []
 })
