@@ -14,6 +14,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 })
 export class AppComponent implements OnInit {
   title = 'FrontClinic';
+
+  menuActive: boolean = false; // Added for hamburger menu - Jonasz
+  
   constructor(private http: HttpClient) {
 
   }
@@ -26,5 +29,10 @@ export class AppComponent implements OnInit {
   }
   public fetachDetailsdb() {
     this.http.get('http://localhost:8080/dbdata').subscribe((data:any) => {})
+  }
+
+// Function to toggle the menu - Jonasz
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
   }
 }
