@@ -5,6 +5,38 @@
   <link rel="stylesheet" type="text/css" href="app.component.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
+
+  <!-- MENU - Jonasz -->
+
+<header>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <a routerLink="/">MedClinic</a>
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="off-screen-menu" [class.active]="menuActive">
+      <ul>
+        <li><a routerLink="/home" (click)="toggleMenu()">Home</a></li>
+        <li><a routerLink="/about" (click)="toggleMenu()">About</a></li>
+        <li><a routerLink="/services" (click)="toggleMenu()">Services</a></li>
+        <li><a routerLink="/contact" (click)="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  
+
+    <!-- Navigation Links -->
+    <nav>
+      <div class="ham-menu" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+</header> 
+
 <body>
 <div>
   <login-menu>
